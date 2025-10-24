@@ -4,9 +4,10 @@ import './HomeComponent.css'
 export const HomeComponent = () => {
   return (
     <div>
-        <div className="main">
-            <h1>home</h1>
-        </div>
+        <main className='global-container'>
+          <div className="home-content"></div>
+          <div className="home-image"></div>
+        </main>
     </div>
   )
 }

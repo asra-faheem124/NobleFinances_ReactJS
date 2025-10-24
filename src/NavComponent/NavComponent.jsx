@@ -1,23 +1,23 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import React from 'react'
+import './NavComponent.css'
+import ButtonComponent from '../ButtonComponent/ButtonComponent'
 
-function NavComponent() {
+export const NavComponent = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">Noble Services</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/services">Services</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
+    <div>
+      <nav className='global-container'>
+        <div className='logo'>
+          <p>Noble Finances</p>
+        </div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/bookings">Bookings</a></li>
+        </ul>
+        <ButtonComponent text='Book an appointment'/>
+      </nav>
+    </div>
+  )
 }
 
-export default NavComponent;
+export default NavComponent
