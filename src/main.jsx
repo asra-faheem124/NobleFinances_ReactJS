@@ -9,6 +9,8 @@ import { HomeComponent } from './HomeComponent/HomeComponent.jsx';
 import { ServicesComponent } from './ServicesComponent/ServicesComponent.jsx';
 import { AppLayout } from './aPPlAYOUT.JSX';
 import BookingsComponent from './BookingsComponent/BookingsComponent.jsx';
+import { ContactComponent } from './ContactComponent/ContactComponent.jsx';
+import { AboutComponent } from './AboutComponent/AboutComponent.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
       {
         path: '/bookings',
         Component: BookingsComponent
+      },
+      {
+        path: '/contact',
+        Component: ContactComponent
+      },
+      {
+        path: '/about',
+        Component: AboutComponent
       }
     ]
   },
